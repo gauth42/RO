@@ -146,7 +146,7 @@ fabric.properties
 # Markdown Navigator plugin
 .idea/**/markdown-navigator.xml
 .idea/**/markdown-navigator/
-
+.idea
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

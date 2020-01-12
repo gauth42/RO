@@ -1,0 +1,27 @@
+Résultats de la méthode 
+Cmax : 1431
+Ecart de l'optimum : 72
+Ecart relatif de l'optimum : 5.03 %
+Temps d'excécution : 0.00392 s
+Ordre des jobs : 9 16 18 14 10 3 15 13 6 2 17 4 11 1 7 5 19 0 12 8 
+Job 9 : op 0 à t = 0 | op 1 à t = 45 | op 2 à t = 54 | op 3 à t = 101 | op 4 à t = 164 | 
+Job 16 : op 0 à t = 45 | op 1 à t = 80 | op 2 à t = 156 | op 3 à t = 211 | op 4 à t = 215 | 
+Job 18 : op 0 à t = 80 | op 1 à t = 156 | op 2 à t = 247 | op 3 à t = 258 | op 4 à t = 291 | 
+Job 14 : op 0 à t = 123 | op 1 à t = 247 | op 2 à t = 261 | op 3 à t = 301 | op 4 à t = 386 | 
+Job 10 : op 0 à t = 160 | op 1 à t = 261 | op 2 à t = 301 | op 3 à t = 386 | op 4 à t = 465 | 
+Job 3 : op 0 à t = 246 | op 1 à t = 334 | op 2 à t = 371 | op 3 à t = 448 | op 4 à t = 531 | 
+Job 15 : op 0 à t = 334 | op 1 à t = 388 | op 2 à t = 483 | op 3 à t = 531 | op 4 à t = 566 | 
+Job 13 : op 0 à t = 388 | op 1 à t = 483 | op 2 à t = 517 | op 3 à t = 554 | op 4 à t = 617 | 
+Job 6 : op 0 à t = 428 | op 1 à t = 490 | op 2 à t = 537 | op 3 à t = 598 | op 4 à t = 628 | 
+Job 2 : op 0 à t = 482 | op 1 à t = 537 | op 2 à t = 598 | op 3 à t = 662 | op 4 à t = 722 | 
+Job 17 : op 0 à t = 509 | op 1 à t = 581 | op 2 à t = 663 | op 3 à t = 709 | op 4 à t = 783 | 
+Job 4 : op 0 à t = 568 | op 1 à t = 663 | op 2 à t = 686 | op 3 à t = 740 | op 4 à t = 839 | 
+Job 11 : op 0 à t = 663 | op 1 à t = 706 | op 2 à t = 737 | op 3 à t = 824 | op 4 à t = 899 | 
+Job 1 : op 0 à t = 706 | op 1 à t = 744 | op 2 à t = 806 | op 3 à t = 899 | op 4 à t = 970 | 
+Job 7 : op 0 à t = 744 | op 1 à t = 807 | op 2 à t = 896 | op 3 à t = 989 | op 4 à t = 1000 | 
+Job 5 : op 0 à t = 807 | op 1 à t = 875 | op 2 à t = 989 | op 3 à t = 1009 | op 4 à t = 1033 | 
+Job 19 : op 0 à t = 862 | op 1 à t = 939 | op 2 à t = 1009 | op 3 à t = 1018 | op 4 à t = 1131 | 
+Job 0 : op 0 à t = 912 | op 1 à t = 976 | op 2 à t = 1035 | op 3 à t = 1116 | op 4 à t = 1204 | 
+Job 12 : op 0 à t = 938 | op 1 à t = 1035 | op 2 à t = 1127 | op 3 à t = 1214 | op 4 à t = 1273 | 
+Job 8 : op 0 à t = 981 | op 1 à t = 1127 | op 2 à t = 1214 | op 3 à t = 1262 | op 4 à t = 1354 | 
+Cmax = 1431

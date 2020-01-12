@@ -14,7 +14,7 @@ class Ordonnancement():
     def __init__(self, nb_machines):
         # séquence des jobs
         self.seq = []
-        # nombre de machiners
+        # nombre de machines
         self.nb_machines = nb_machines
         # durée totale de l'ordonnancement
         self.dur = 0
@@ -37,16 +37,17 @@ class Ordonnancement():
         job.date_deb[operation] = date
 
     def afficher(self):
-        print("Ordre des jobs :", end='')
+        res = "Ordre des jobs : "
         for job in self.seq:
-            print(" ",job.numero()," ", end='')
-        print()
+            res += "{} ".format(job.numero())
+        res += "\n"
         for job in self.seq:
-            print("Job", job.numero(), ":", end='')
+            res += "Job {} : ".format(job.numero())
             for mach in range(self.nb_machines):
-                print(" op", mach, "à t =", self.date_debut_operation(job, mach),"|", end='')
-            print()
-        print("Cmax =", self.dur)
+                res += "op {} à t = {} | ".format(mach, self.date_debut_operation(job, mach))
+            res += "\n"
+        res += "Cmax = {}".format(self.dur)
+        return res
 
     # ajoute un job dans l'ordonnancement
     # à la suite de ceux déjà ordonnancés
@@ -68,6 +69,22 @@ class Ordonnancement():
         for job in liste_jobs:
             self.ordonnancer_job(job)
 
+    # Calcul la nouvelle durée hypotéhtique en ajoutant un nouveau job
+    # sans modifier les variables de l'object
+    def hypothetic_ordonnancer_job(self, job):
+        seq = self.seq +[job]
+        date_dispo = self.date_dispo.copy()
+        date_deb = job.date_deb
+
+        for mach in range(self.nb_machines):
+            if mach == 0:  # première machine
+                date_deb[mach] = date_dispo[0]
+            else:  # machines suivantes
+                date = max(date_dispo[mach - 1], date_dispo[mach])
+                date_deb[mach] = date
+            date_dispo[mach] = date_deb[mach] + job.duree_operation(mach)
+        return max(self.dur, date_dispo[self.nb_machines - 1])
+
 # "main" pour tester la classe   
 if __name__ == "__main__":
     a = job.Job(1,[1,1,1,1,10])
@@ -79,6 +96,6 @@ if __name__ == "__main__":
     ordo.ordonnancer_job(a)
     ordo.ordonnancer_job(b)
     ordo.sequence()
-    ordo.afficher()
+    print(ordo.afficher())
     a.afficher()
     b.afficher()
