@@ -1,61 +1,61 @@
 Résultats de la méthode 
-Cmax : 3033
-Ecart de l'optimum : 309
-Ecart relatif de l'optimum : 10.19 %
+Cmax : 2928
+Ecart de l'optimum : 204
+Ecart relatif de l'optimum : 6.97 %
 
-Greedy paramètre alpha : 0.9
+Greedy paramètre alpha : 1.0
 Biais : lineaire
-Temps d'excécution : 0.02168 s
+Temps d'excécution : 0.02010 s
 
-Ordre des jobs : 30 25 37 43 27 19 38 41 40 11 18 0 9 39 20 34 4 48 24 12 17 46 47 45 23 7 42 32 31 5 10 2 36 21 22 13 6 1 29 26 16 33 14 15 44 49 8 3 35 28 
-Job 30 : op 0 à t = 0 | op 1 à t = 17 | op 2 à t = 25 | op 3 à t = 63 | op 4 à t = 109 | 
-Job 25 : op 0 à t = 17 | op 1 à t = 38 | op 2 à t = 63 | op 3 à t = 154 | op 4 à t = 224 | 
-Job 37 : op 0 à t = 38 | op 1 à t = 84 | op 2 à t = 154 | op 3 à t = 224 | op 4 à t = 282 | 
-Job 43 : op 0 à t = 84 | op 1 à t = 134 | op 2 à t = 218 | op 3 à t = 268 | op 4 à t = 332 | 
-Job 27 : op 0 à t = 134 | op 1 à t = 218 | op 2 à t = 298 | op 3 à t = 389 | op 4 à t = 443 | 
-Job 19 : op 0 à t = 180 | op 1 à t = 298 | op 2 à t = 389 | op 3 à t = 443 | op 4 à t = 501 | 
-Job 38 : op 0 à t = 247 | op 1 à t = 360 | op 2 à t = 417 | op 3 à t = 464 | op 4 à t = 537 | 
-Job 41 : op 0 à t = 251 | op 1 à t = 410 | op 2 à t = 508 | op 3 à t = 537 | op 4 à t = 607 | 
-Job 40 : op 0 à t = 271 | op 1 à t = 508 | op 2 à t = 535 | op 3 à t = 626 | op 4 à t = 692 | 
-Job 11 : op 0 à t = 275 | op 1 à t = 535 | op 2 à t = 626 | op 3 à t = 692 | op 4 à t = 717 | 
-Job 18 : op 0 à t = 347 | op 1 à t = 579 | op 2 à t = 637 | op 3 à t = 717 | op 4 à t = 756 | 
-Job 0 : op 0 à t = 436 | op 1 à t = 581 | op 2 à t = 676 | op 3 à t = 753 | op 4 à t = 779 | 
-Job 9 : op 0 à t = 511 | op 1 à t = 607 | op 2 à t = 724 | op 3 à t = 779 | op 4 à t = 856 | 
-Job 39 : op 0 à t = 524 | op 1 à t = 627 | op 2 à t = 741 | op 3 à t = 839 | op 4 à t = 942 | 
-Job 20 : op 0 à t = 538 | op 1 à t = 657 | op 2 à t = 839 | op 3 à t = 933 | op 4 à t = 968 | 
-Job 34 : op 0 à t = 608 | op 1 à t = 719 | op 2 à t = 933 | op 3 à t = 965 | op 4 à t = 1007 | 
-Job 4 : op 0 à t = 694 | op 1 à t = 790 | op 2 à t = 946 | op 3 à t = 1018 | op 4 à t = 1111 | 
-Job 48 : op 0 à t = 735 | op 1 à t = 839 | op 2 à t = 1018 | op 3 à t = 1111 | op 4 à t = 1140 | 
-Job 24 : op 0 à t = 785 | op 1 à t = 888 | op 2 à t = 1098 | op 3 à t = 1153 | op 4 à t = 1181 | 
-Job 12 : op 0 à t = 853 | op 1 à t = 982 | op 2 à t = 1153 | op 3 à t = 1181 | op 4 à t = 1274 | 
-Job 17 : op 0 à t = 891 | op 1 à t = 1074 | op 2 à t = 1169 | op 3 à t = 1230 | op 4 à t = 1350 | 
-Job 46 : op 0 à t = 897 | op 1 à t = 1119 | op 2 à t = 1230 | op 3 à t = 1307 | op 4 à t = 1380 | 
-Job 47 : op 0 à t = 990 | op 1 à t = 1177 | op 2 à t = 1244 | op 3 à t = 1380 | op 4 à t = 1422 | 
-Job 45 : op 0 à t = 1066 | op 1 à t = 1222 | op 2 à t = 1291 | op 3 à t = 1408 | op 4 à t = 1472 | 
-Job 23 : op 0 à t = 1124 | op 1 à t = 1234 | op 2 à t = 1296 | op 3 à t = 1472 | op 4 à t = 1553 | 
-Job 7 : op 0 à t = 1154 | op 1 à t = 1263 | op 2 à t = 1297 | op 3 à t = 1553 | op 4 à t = 1573 | 
-Job 42 : op 0 à t = 1223 | op 1 à t = 1311 | op 2 à t = 1395 | op 3 à t = 1573 | op 4 à t = 1670 | 
-Job 32 : op 0 à t = 1311 | op 1 à t = 1394 | op 2 à t = 1459 | op 3 à t = 1670 | op 4 à t = 1689 | 
-Job 31 : op 0 à t = 1394 | op 1 à t = 1459 | op 2 à t = 1549 | op 3 à t = 1689 | op 4 à t = 1749 | 
-Job 5 : op 0 à t = 1417 | op 1 à t = 1500 | op 2 à t = 1574 | op 3 à t = 1749 | op 4 à t = 1842 | 
-Job 10 : op 0 à t = 1460 | op 1 à t = 1512 | op 2 à t = 1619 | op 3 à t = 1803 | op 4 à t = 1921 | 
-Job 2 : op 0 à t = 1484 | op 1 à t = 1564 | op 2 à t = 1698 | op 3 à t = 1878 | op 4 à t = 1946 | 
-Job 36 : op 0 à t = 1497 | op 1 à t = 1589 | op 2 à t = 1790 | op 3 à t = 1882 | op 4 à t = 1955 | 
-Job 21 : op 0 à t = 1564 | op 1 à t = 1603 | op 2 à t = 1815 | op 3 à t = 1926 | op 4 à t = 1972 | 
-Job 22 : op 0 à t = 1594 | op 1 à t = 1685 | op 2 à t = 1902 | op 3 à t = 1972 | op 4 à t = 2003 | 
-Job 13 : op 0 à t = 1683 | op 1 à t = 1764 | op 2 à t = 1925 | op 3 à t = 2014 | op 4 à t = 2091 | 
-Job 6 : op 0 à t = 1764 | op 1 à t = 1857 | op 2 à t = 2014 | op 3 à t = 2091 | op 4 à t = 2115 | 
-Job 1 : op 0 à t = 1857 | op 1 à t = 1944 | op 2 à t = 2019 | op 3 à t = 2112 | op 4 à t = 2179 | 
-Job 29 : op 0 à t = 1944 | op 1 à t = 1981 | op 2 à t = 2023 | op 3 à t = 2179 | op 4 à t = 2273 | 
-Job 26 : op 0 à t = 1954 | op 1 à t = 2032 | op 2 à t = 2083 | op 3 à t = 2241 | op 4 à t = 2330 | 
-Job 16 : op 0 à t = 2032 | op 1 à t = 2074 | op 2 à t = 2150 | op 3 à t = 2330 | op 4 à t = 2415 | 
-Job 33 : op 0 à t = 2058 | op 1 à t = 2105 | op 2 à t = 2195 | op 3 à t = 2345 | op 4 à t = 2506 | 
-Job 14 : op 0 à t = 2105 | op 1 à t = 2188 | op 2 à t = 2288 | op 3 à t = 2442 | op 4 à t = 2593 | 
-Job 15 : op 0 à t = 2188 | op 1 à t = 2283 | op 2 à t = 2369 | op 3 à t = 2470 | op 4 à t = 2631 | 
-Job 44 : op 0 à t = 2276 | op 1 à t = 2360 | op 2 à t = 2461 | op 3 à t = 2538 | op 4 à t = 2636 | 
-Job 49 : op 0 à t = 2360 | op 1 à t = 2425 | op 2 à t = 2538 | op 3 à t = 2635 | op 4 à t = 2722 | 
-Job 8 : op 0 à t = 2390 | op 1 à t = 2470 | op 2 à t = 2583 | op 3 à t = 2722 | op 4 à t = 2728 | 
-Job 3 : op 0 à t = 2470 | op 1 à t = 2516 | op 2 à t = 2676 | op 3 à t = 2768 | op 4 à t = 2793 | 
-Job 35 : op 0 à t = 2481 | op 1 à t = 2611 | op 2 à t = 2768 | op 3 à t = 2833 | op 4 à t = 2850 | 
-Job 28 : op 0 à t = 2499 | op 1 à t = 2641 | op 2 à t = 2833 | op 3 à t = 2840 | op 4 à t = 2936 | 
-Cmax = 3033
+Ordre des jobs : 25 28 33 32 43 38 47 5 30 15 31 7 35 34 40 23 26 48 41 39 0 27 29 6 13 12 46 1 37 3 4 9 16 14 44 8 18 10 21 24 11 36 42 17 22 2 45 20 49 19 
+Job 25 : op 0 à t = 0 | op 1 à t = 21 | op 2 à t = 41 | op 3 à t = 132 | op 4 à t = 202 | 
+Job 28 : op 0 à t = 21 | op 1 à t = 120 | op 2 à t = 214 | op 3 à t = 218 | op 4 à t = 314 | 
+Job 33 : op 0 à t = 120 | op 1 à t = 214 | op 2 à t = 218 | op 3 à t = 314 | op 4 à t = 411 | 
+Job 32 : op 0 à t = 167 | op 1 à t = 250 | op 2 à t = 315 | op 3 à t = 411 | op 4 à t = 498 | 
+Job 43 : op 0 à t = 250 | op 1 à t = 315 | op 2 à t = 405 | op 3 à t = 455 | op 4 à t = 500 | 
+Job 38 : op 0 à t = 300 | op 1 à t = 399 | op 2 à t = 455 | op 3 à t = 502 | op 4 à t = 575 | 
+Job 47 : op 0 à t = 304 | op 1 à t = 449 | op 2 à t = 502 | op 3 à t = 575 | op 4 à t = 603 | 
+Job 5 : op 0 à t = 380 | op 1 à t = 494 | op 2 à t = 549 | op 3 à t = 603 | op 4 à t = 657 | 
+Job 30 : op 0 à t = 423 | op 1 à t = 506 | op 2 à t = 594 | op 3 à t = 657 | op 4 à t = 736 | 
+Job 15 : op 0 à t = 440 | op 1 à t = 528 | op 2 à t = 632 | op 3 à t = 724 | op 4 à t = 815 | 
+Job 31 : op 0 à t = 528 | op 1 à t = 561 | op 2 à t = 724 | op 3 à t = 749 | op 4 à t = 820 | 
+Job 7 : op 0 à t = 551 | op 1 à t = 620 | op 2 à t = 749 | op 3 à t = 847 | op 4 à t = 913 | 
+Job 35 : op 0 à t = 620 | op 1 à t = 638 | op 2 à t = 847 | op 3 à t = 912 | op 4 à t = 986 | 
+Job 34 : op 0 à t = 638 | op 1 à t = 724 | op 2 à t = 912 | op 3 à t = 925 | op 4 à t = 1004 | 
+Job 40 : op 0 à t = 724 | op 1 à t = 795 | op 2 à t = 925 | op 3 à t = 1016 | op 4 à t = 1082 | 
+Job 23 : op 0 à t = 728 | op 1 à t = 822 | op 2 à t = 1016 | op 3 à t = 1082 | op 4 à t = 1163 | 
+Job 26 : op 0 à t = 758 | op 1 à t = 851 | op 2 à t = 1017 | op 3 à t = 1163 | op 4 à t = 1252 | 
+Job 48 : op 0 à t = 836 | op 1 à t = 893 | op 2 à t = 1084 | op 3 à t = 1252 | op 4 à t = 1337 | 
+Job 41 : op 0 à t = 886 | op 1 à t = 942 | op 2 à t = 1164 | op 3 à t = 1256 | op 4 à t = 1373 | 
+Job 39 : op 0 à t = 906 | op 1 à t = 1040 | op 2 à t = 1175 | op 3 à t = 1326 | op 4 à t = 1394 | 
+Job 0 : op 0 à t = 920 | op 1 à t = 1070 | op 2 à t = 1273 | op 3 à t = 1341 | op 4 à t = 1420 | 
+Job 27 : op 0 à t = 995 | op 1 à t = 1096 | op 2 à t = 1321 | op 3 à t = 1412 | op 4 à t = 1497 | 
+Job 29 : op 0 à t = 1041 | op 1 à t = 1176 | op 2 à t = 1412 | op 3 à t = 1472 | op 4 à t = 1555 | 
+Job 6 : op 0 à t = 1051 | op 1 à t = 1211 | op 2 à t = 1472 | op 3 à t = 1534 | op 4 à t = 1565 | 
+Job 13 : op 0 à t = 1144 | op 1 à t = 1270 | op 2 à t = 1477 | op 3 à t = 1566 | op 4 à t = 1643 | 
+Job 12 : op 0 à t = 1225 | op 1 à t = 1345 | op 2 à t = 1566 | op 3 à t = 1643 | op 4 à t = 1667 | 
+Job 46 : op 0 à t = 1263 | op 1 à t = 1437 | op 2 à t = 1582 | op 3 à t = 1659 | op 4 à t = 1743 | 
+Job 1 : op 0 à t = 1356 | op 1 à t = 1495 | op 2 à t = 1596 | op 3 à t = 1732 | op 4 à t = 1799 | 
+Job 37 : op 0 à t = 1443 | op 1 à t = 1532 | op 2 à t = 1600 | op 3 à t = 1799 | op 4 à t = 1893 | 
+Job 3 : op 0 à t = 1489 | op 1 à t = 1564 | op 2 à t = 1659 | op 3 à t = 1806 | op 4 à t = 1943 | 
+Job 4 : op 0 à t = 1500 | op 1 à t = 1659 | op 2 à t = 1751 | op 3 à t = 1823 | op 4 à t = 2000 | 
+Job 9 : op 0 à t = 1541 | op 1 à t = 1708 | op 2 à t = 1823 | op 3 à t = 1916 | op 4 à t = 2029 | 
+Job 16 : op 0 à t = 1554 | op 1 à t = 1728 | op 2 à t = 1840 | op 3 à t = 1934 | op 4 à t = 2115 | 
+Job 14 : op 0 à t = 1580 | op 1 à t = 1738 | op 2 à t = 1885 | op 3 à t = 1966 | op 4 à t = 2206 | 
+Job 44 : op 0 à t = 1663 | op 1 à t = 1833 | op 2 à t = 1966 | op 3 à t = 2043 | op 4 à t = 2244 | 
+Job 8 : op 0 à t = 1747 | op 1 à t = 1898 | op 2 à t = 2043 | op 3 à t = 2140 | op 4 à t = 2329 | 
+Job 18 : op 0 à t = 1827 | op 1 à t = 1944 | op 2 à t = 2136 | op 3 à t = 2175 | op 4 à t = 2394 | 
+Job 10 : op 0 à t = 1916 | op 1 à t = 1946 | op 2 à t = 2175 | op 3 à t = 2254 | op 4 à t = 2416 | 
+Job 21 : op 0 à t = 1940 | op 1 à t = 1998 | op 2 à t = 2254 | op 3 à t = 2341 | op 4 à t = 2441 | 
+Job 24 : op 0 à t = 1970 | op 1 à t = 2080 | op 2 à t = 2341 | op 3 à t = 2396 | op 4 à t = 2472 | 
+Job 11 : op 0 à t = 2038 | op 1 à t = 2174 | op 2 à t = 2396 | op 3 à t = 2424 | op 4 à t = 2565 | 
+Job 36 : op 0 à t = 2110 | op 1 à t = 2218 | op 2 à t = 2407 | op 3 à t = 2449 | op 4 à t = 2604 | 
+Job 42 : op 0 à t = 2177 | op 1 à t = 2265 | op 2 à t = 2432 | op 3 à t = 2493 | op 4 à t = 2614 | 
+Job 17 : op 0 à t = 2265 | op 1 à t = 2304 | op 2 à t = 2478 | op 3 à t = 2590 | op 4 à t = 2667 | 
+Job 22 : op 0 à t = 2271 | op 1 à t = 2360 | op 2 à t = 2539 | op 3 à t = 2667 | op 4 à t = 2696 | 
+Job 2 : op 0 à t = 2360 | op 1 à t = 2389 | op 2 à t = 2562 | op 3 à t = 2688 | op 4 à t = 2742 | 
+Job 45 : op 0 à t = 2373 | op 1 à t = 2431 | op 2 à t = 2654 | op 3 à t = 2692 | op 4 à t = 2756 | 
+Job 20 : op 0 à t = 2431 | op 1 à t = 2501 | op 2 à t = 2659 | op 3 à t = 2756 | op 4 à t = 2802 | 
+Job 49 : op 0 à t = 2501 | op 1 à t = 2563 | op 2 à t = 2753 | op 3 à t = 2798 | op 4 à t = 2885 | 
+Job 19 : op 0 à t = 2531 | op 1 à t = 2598 | op 2 à t = 2798 | op 3 à t = 2885 | op 4 à t = 2901 | 
+Cmax = 2928
