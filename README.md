@@ -23,14 +23,16 @@ Les données sont contenues dans les dossiers data_1 et data_2
 
 ## Lancement des tests
 
-Les tests se lancent depuis le terminal en lançant le script **flowshop.py** avec deux arguments :
+Les tests se lancent depuis le terminal en lançant le script **flowshop.py** avec 4 arguments :
 
-1. Chemin vers le fichier de test
-2. Boolean indiquant si l'on souhaite afficher les différentes informations sur le flowshop et les résultats
+* **file_name** : le fichier de test
+* **alpha** : valeur du greedy paramètre
+* **biais_type** : type de biais utilisé
+* **do_print** : 1 pour afficher les sorties, 0 sinon
 
-Exemple de ligne de commande exécutant la méthode sur l'input *data_1/tai01.txt* et affichant la sortie :
+Exemple de ligne de commande :
 
-`python flowshop.py data_1/tai01.txt 1`
+`python flowshop.py data_1/tai01.txt 0.5 lineaire 1`
 
 L'affichage dans le terminal est le suivant :
 
@@ -42,13 +44,17 @@ Les meilleures solutions sont sauvegardées dans le dossier **logs**. Ces logs s
 
 Remarque : si l'on suite suivre l'évolution de l'algorithme et suivre les choix de l'algorithme à chaque étape il suffit de décommenter la ligne 87 du script **grasp.py**
 
+Le script **reuslts.py** exécute la méthode grasp pluisieurs fois sur chaque instance pour chaque valeur de alpha entre 0 et 1 avec un pas de 0.1. Les résultats sont sauvegardés dans le dossier *results_stat*. Il prend un paramètre:
+
+* **nb_ite** : nombre d'itérations pour chaque instance
+
+Example de ligne de commande
+
+`python results.py 1000`
+
 ## Auteurs
 
-* **Gauthier Gris** : Travail inital et implémentation de la méthode GRASP
-* **Quentin Depoortere**
-* **Etienne Raveau**
-* **Jérôme Daulion**
-* **Marin Guermeur**
+* **Gauthier Gris** : Travail inital, implémentation de la méthode GRASP et analyse des résultats
 
 
 
