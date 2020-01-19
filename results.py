@@ -13,20 +13,17 @@ start = time.time()
 alphas = np.linspace(0, 1, 11)
 # Nombre d'itération pour chaque fichier
 nb_ite = int(sys.argv[1])
-# Data frame pour sauvegarder les resultats
-df = pd.DataFrame(columns=["file_name", "alpha", "Cmax_mean", "Cmax_std"])
 
 # Tous les jeux de données
 files = ["data_1/"+data for data in os.listdir("data_1")]+["data_2/"+data for data in os.listdir("data_2")]
 
-
+res = list()
 for file in files:
-    print("-------------------------------\n"
-          "File : {}\n".format(file))
+    print("------------------------------------------\n"
+          "Fichier : {}\n".format(file))
     for alpha in alphas:
-        print("    Alpha = {}\n".format(alpha))
+        print("Alpha = {}\n".format(alpha))
         biais_type = "lineaire"
-        res = []
 
         for i in range(nb_ite):
             prob = flowshop.Flowshop()
@@ -34,13 +31,11 @@ for file in files:
             grasp = Grasp(prob, alpha, biais_type)
             grasp.main()
             grasp.save_best(file)
-            res.append(grasp.ordo.duree())
 
-        mean = round(float(np.mean(res)), 3)
-        std = round(float(np.std(res)), 3)
-        df.loc[df.shape[0]] = [file, alpha, mean, std]
+            res.append([file, alpha, grasp.ordo.duree()])
 
 # Sauvegarde
+df = pd.DataFrame(res, columns=["file_name", "alpha", "Cmax"])
 df.to_csv("results_stat/nb_ite_{}".format(nb_ite), index=False)
 
 
