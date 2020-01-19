@@ -13,7 +13,7 @@ import sys
 import os
 
 
-class Flowshop():
+class Flowshop:
     def __init__(self, nb_jobs=0, nb_machines=0, optimum=0, l_job=None):
         # nombre de jobs pour le problème
         self.nb_jobs = nb_jobs
@@ -59,77 +59,45 @@ class Flowshop():
         for job in self.l_job:
             job.afficher()
 
+    def get_info(self, f_name):
+        # Description du problème
+        description = ("\nFichier : {}\n"
+                       "Nombre de machine : {}\n"
+                       "Nombre de jobs : {}\n"
+                       "Solution optimale : {}\n"
+                       "\n".format(f_name, self.nb_machines, self.nb_jobs, self.optimum))
+        return description
+
 
 if __name__ == "__main__":
     # Récupération des arguments
     file_name = sys.argv[1]
-    if file_name.find('/') > 0:
-        dir_name = file_name[:file_name.find('/')]
-    else:
-        dir_name = None
 
-    do_print = bool(int(sys.argv[2]))
+    alpha = float(sys.argv[2])
+    biais_type = sys.argv[3]
+    do_print = bool(int(sys.argv[4]))
 
     # Construction du Flowshop
     prob = Flowshop()
     prob.definir_par(file_name)
 
-    # Ajout de tous les jobs au flowshop
-    for i in range(prob.nb_jobs):
-        j = prob.liste_jobs(i)
-
     # Information sur le problème
-    info = ("\nFichier : {}\n" \
-            "Nombre de machine : {}\n"
-            "Nombre de jobs : {}\n"
-            "Solution optimale : {}\n"
-            "\n".format(file_name, prob.nb_machines, prob.nb_jobs, prob.optimum))
+    info = prob.get_info(file_name)
 
     # Execution de la méthode GRASP
-    grasp = grasp.Grasp(prob)
+    grasp = grasp.Grasp(prob, alpha, biais_type)
     grasp.main()
 
-    res = ("Résultats de la méthode \n"
-           "Cmax : {}\n"
-           "Ecart de l'optimum : {}\n"
-           "Ecart relatif de l'optimum : {:.2f} %\n"
-           "Greedy paramètre alpha : {}\n"
-           "Biais : {}\n"
-           "Temps d'excécution : {:.5f} s"
-           "".format(grasp.ordo.duree(), grasp.ordo.duree() - prob.optimum,
-                     (grasp.ordo.duree() - prob.optimum) / grasp.ordo.duree() * 100,
-                     grasp.alpha, grasp.bias, grasp.temps_exe))
+    # Récupération des résultats
+    results = grasp.get_results()
 
-    # Sauvegarde de l'ordonanncement dans les logs si la séquence est meilleure que les précédentes
-    log = res + "\n" + grasp.ordo.afficher()
-    meilleur = ""
-
-    if not os.path.exists("logs/" + file_name):
-        if dir_name is not None and not os.path.exists("logs/" + dir_name):
-            os.mkdir("logs/" + dir_name)
-        f = open("logs/" + file_name, "x")
-        f.write(log)
-        f.close()
-        print("Ecart de l'optimum : {:.2f} %".format((grasp.ordo.duree() - prob.optimum) / grasp.ordo.duree() * 100))
-    else:
-        flog = open("logs/" + file_name, "r")
-        lignes = flog.readlines()
-        actual_best = int(lignes[1].split()[-1])
-        flog.close()
-        if grasp.ordo.duree() < actual_best:
-            meilleur = "La solution a été amélioré : \n" \
-                  "      - ancienne solution : {}\n" \
-                  "      - nouvelle solution : {}".format(actual_best, grasp.ordo.duree())
-            fnew = open("logs/" + file_name, "w")
-            fnew.write(log)
-            fnew.close()
-            if not do_print:
-                print("Ecart de l'optimum : {:.2f} %".format((grasp.ordo.duree() - prob.optimum) / grasp.ordo.duree() * 100))
+    # Sauvegarde du résultat s'il est meilleur que le précédent
+    meilleur = grasp.save_best(file_name)
 
     # Affichage des informations
     if do_print:
         print(info)
         print("----------------------------------------------------\n"
               "----------------------------------------------------\n")
-        print(res)
+        print(results)
         print(meilleur)

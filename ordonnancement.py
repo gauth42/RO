@@ -8,8 +8,8 @@ __date__ = 'Octobre 2019'
 
 import job
 
-class Ordonnancement():
 
+class Ordonnancement:
     # constructeur pour un ordonnancement vide
     def __init__(self, nb_machines):
         # séquence des jobs

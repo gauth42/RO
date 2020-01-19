@@ -1,27 +1,31 @@
 Résultats de la méthode 
-Cmax : 1397
-Ecart de l'optimum : 119
-Ecart relatif de l'optimum : 8.52 %
-Temps d'excécution : 0.00378 s
-Ordre des jobs : 2 12 14 16 13 17 7 18 6 9 11 1 5 19 15 8 0 3 10 4 
+Cmax : 1377
+Ecart de l'optimum : 99
+Ecart relatif de l'optimum : 7.19 %
+
+Greedy paramètre alpha : 1.0
+Biais : lineaire
+Temps d'excécution : 0.00524 s
+
+Ordre des jobs : 2 12 7 10 8 14 6 0 5 11 15 16 13 19 1 9 3 18 4 17 
 Job 2 : op 0 à t = 0 | op 1 à t = 15 | op 2 à t = 26 | op 3 à t = 75 | op 4 à t = 106 | 
 Job 12 : op 0 à t = 15 | op 1 à t = 29 | op 2 à t = 102 | op 3 à t = 165 | op 4 à t = 204 | 
-Job 14 : op 0 à t = 29 | op 1 à t = 102 | op 2 à t = 165 | op 3 à t = 228 | op 4 à t = 284 | 
-Job 16 : op 0 à t = 41 | op 1 à t = 149 | op 2 à t = 228 | op 3 à t = 284 | op 4 à t = 338 | 
-Job 13 : op 0 à t = 73 | op 1 à t = 170 | op 2 à t = 254 | op 3 à t = 338 | op 4 à t = 396 | 
-Job 17 : op 0 à t = 102 | op 1 à t = 245 | op 2 à t = 331 | op 3 à t = 406 | op 4 à t = 483 | 
-Job 7 : op 0 à t = 189 | op 1 à t = 331 | op 2 à t = 406 | op 3 à t = 483 | op 4 à t = 542 | 
-Job 18 : op 0 à t = 227 | op 1 à t = 391 | op 2 à t = 429 | op 3 à t = 542 | op 4 à t = 593 | 
-Job 6 : op 0 à t = 295 | op 1 à t = 396 | op 2 à t = 506 | op 3 à t = 593 | op 4 à t = 661 | 
-Job 9 : op 0 à t = 348 | op 1 à t = 495 | op 2 à t = 566 | op 3 à t = 630 | op 4 à t = 715 | 
-Job 11 : op 0 à t = 435 | op 1 à t = 551 | op 2 à t = 630 | op 3 à t = 715 | op 4 à t = 728 | 
-Job 1 : op 0 à t = 526 | op 1 à t = 612 | op 2 à t = 631 | op 3 à t = 724 | op 4 à t = 800 | 
-Job 5 : op 0 à t = 609 | op 1 à t = 645 | op 2 à t = 720 | op 3 à t = 782 | op 4 à t = 873 | 
-Job 19 : op 0 à t = 645 | op 1 à t = 739 | op 2 à t = 816 | op 3 à t = 873 | op 4 à t = 908 | 
-Job 15 : op 0 à t = 739 | op 1 à t = 816 | op 2 à t = 856 | op 3 à t = 904 | op 4 à t = 944 | 
-Job 8 : op 0 à t = 816 | op 1 à t = 843 | op 2 à t = 903 | op 3 à t = 960 | op 4 à t = 1031 | 
-Job 0 : op 0 à t = 843 | op 1 à t = 897 | op 2 à t = 976 | op 3 à t = 1009 | op 4 à t = 1100 | 
-Job 3 : op 0 à t = 897 | op 1 à t = 976 | op 2 à t = 1075 | op 3 à t = 1090 | op 4 à t = 1158 | 
-Job 10 : op 0 à t = 968 | op 1 à t = 1075 | op 2 à t = 1090 | op 3 à t = 1158 | op 4 à t = 1243 | 
-Job 4 : op 0 à t = 1044 | op 1 à t = 1121 | op 2 à t = 1177 | op 3 à t = 1266 | op 4 à t = 1344 | 
-Cmax = 1397
+Job 7 : op 0 à t = 29 | op 1 à t = 102 | op 2 à t = 165 | op 3 à t = 204 | op 4 à t = 263 | 
+Job 10 : op 0 à t = 67 | op 1 à t = 162 | op 2 à t = 188 | op 3 à t = 263 | op 4 à t = 348 | 
+Job 8 : op 0 à t = 143 | op 1 à t = 170 | op 2 à t = 195 | op 3 à t = 348 | op 4 à t = 434 | 
+Job 14 : op 0 à t = 170 | op 1 à t = 182 | op 2 à t = 252 | op 3 à t = 397 | op 4 à t = 503 | 
+Job 6 : op 0 à t = 182 | op 1 à t = 235 | op 2 à t = 334 | op 3 à t = 453 | op 4 à t = 550 | 
+Job 0 : op 0 à t = 235 | op 1 à t = 334 | op 2 à t = 413 | op 3 à t = 466 | op 4 à t = 603 | 
+Job 5 : op 0 à t = 289 | op 1 à t = 413 | op 2 à t = 483 | op 3 à t = 532 | op 4 à t = 661 | 
+Job 11 : op 0 à t = 325 | op 1 à t = 483 | op 2 à t = 544 | op 3 à t = 623 | op 4 à t = 696 | 
+Job 15 : op 0 à t = 416 | op 1 à t = 544 | op 2 à t = 558 | op 3 à t = 632 | op 4 à t = 768 | 
+Job 16 : op 0 à t = 493 | op 1 à t = 558 | op 2 à t = 605 | op 3 à t = 672 | op 4 à t = 855 | 
+Job 13 : op 0 à t = 525 | op 1 à t = 579 | op 2 à t = 654 | op 3 à t = 726 | op 4 à t = 913 | 
+Job 19 : op 0 à t = 554 | op 1 à t = 654 | op 2 à t = 731 | op 3 à t = 771 | op 4 à t = 962 | 
+Job 1 : op 0 à t = 648 | op 1 à t = 731 | op 2 à t = 771 | op 3 à t = 860 | op 4 à t = 990 | 
+Job 9 : op 0 à t = 731 | op 1 à t = 818 | op 2 à t = 874 | op 3 à t = 938 | op 4 à t = 1046 | 
+Job 3 : op 0 à t = 818 | op 1 à t = 889 | op 2 à t = 988 | op 3 à t = 1023 | op 4 à t = 1091 | 
+Job 18 : op 0 à t = 889 | op 1 à t = 988 | op 2 à t = 1003 | op 3 à t = 1091 | op 4 à t = 1176 | 
+Job 4 : op 0 à t = 957 | op 1 à t = 1034 | op 2 à t = 1090 | op 3 à t = 1179 | op 4 à t = 1257 | 
+Job 17 : op 0 à t = 1034 | op 1 à t = 1121 | op 2 à t = 1207 | op 3 à t = 1282 | op 4 à t = 1359 | 
+Cmax = 1377
