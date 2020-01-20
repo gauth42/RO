@@ -55,6 +55,10 @@ Example de ligne de commande
 ## Auteurs
 
 * **Gauthier Gris** : Travail inital, implémentation de la méthode GRASP et analyse des résultats
+* **Jérôme Daulion** : Il a trouvé le fichier
+* **Marin Guermeur** : Soutien mental
+* **Etienne Raveau** : S'est peint les couilles en bleues
+* **Quentin Deportere** : Beau sourire
 
 
 
